@@ -1,0 +1,23 @@
+﻿<Window x:Class="NanogramSolver.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NanogramSolver"
+        mc:Ignorable="d"
+        Title="Nanogram Solver" Height="584.8" Width="788.2">
+    <Grid Background="#FF252525">
+        <Button x:Name="nextSolutionButton" Content="Next Solution" HorizontalAlignment="Right" Margin="0,115,9.6,0" VerticalAlignment="Top" Width="95" Click="nextSolutionButton_Click"/>
+        <Button x:Name="chooseFileButton" Content="..." Margin="0,10,9.6,0" VerticalAlignment="Top" Click="chooseFileButton_Click" HorizontalAlignment="Right" Width="24"/>
+        <TextBox x:Name="timeSolvedTextBox" Height="25" Margin="0,38,8.6,0" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Right" Width="149"/>
+        <Button x:Name="solveButton" Content="SOLVE!" HorizontalAlignment="Right" Margin="0,68,8.6,0" VerticalAlignment="Top" Width="215" Click="solveButton_Click" Height="42"/>
+        <Viewbox Margin="10,10,228.6,9.8">
+            <Grid x:Name="boardGrid" Height="500" Width="500"/>
+        </Viewbox>
+        <Label Content="Choose Nanogram file:" HorizontalAlignment="Right" Margin="0,8,38.6,0" VerticalAlignment="Top" Foreground="#FFE0E0E0"/>
+        <Label Content="Solved in:" Margin="0,39,162.6,0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="61" Foreground="#FFCECECE"/>
+        <CheckBox x:Name="solveForAll" Content="Solve for all&#xD;&#xA;solutions&#xD;&#xA;" Margin="0,121,109.6,0" VerticalAlignment="Top" Foreground="#FFE5E5E5" HorizontalAlignment="Right" Width="114"/>
+
+
+    </Grid>
+</Window>
